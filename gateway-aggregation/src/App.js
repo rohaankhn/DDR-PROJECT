@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Gateway from './components/Gateway';
-import './App.css';
+import './CSS/App.css';
 
 function App() {
   const [endpoint, setEndpoint] = useState(null);
