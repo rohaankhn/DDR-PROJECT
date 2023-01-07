@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import '../CSS/gateway.css'
 function Gateway(props) {
   const [response, setResponse] = useState(null);
 
@@ -17,7 +17,7 @@ function Gateway(props) {
       {response && (
         <div>
             {response.map( (item) =>
-                <div key={item.id} style={{color: 'aliceblue'}} >
+                <div className='responses' key={item.id} >
                     <h1>{ item.id + ". " + item.title}</h1>
                     <p>{item.description}</p>
                 </div>
