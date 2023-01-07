@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Gateway from './components/Gateway';
+import './App.css';
 
 function App() {
   const [endpoint, setEndpoint] = useState(null);
@@ -9,11 +10,13 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='App'>
       <form>
-        <label>
-          Select a Service:
-          <select value={endpoint} onChange={handleChange}>
+        <label >
+          <label className='form-label' >
+            Select a Service:
+          </label>
+          <select className='selector' value={endpoint} onChange={handleChange}>
             <option value="https://jsonplaceholder.typicode.com/todos">Todo list</option>
             <option value="https://jsonplaceholder.typicode.com/photos">Pictures Titles List</option>
             <option value="https://jsonplaceholder.typicode.com/posts">Post Titles List</option>

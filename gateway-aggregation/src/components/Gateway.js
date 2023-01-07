@@ -17,7 +17,7 @@ function Gateway(props) {
       {response && (
         <div>
             {response.map( (item) =>
-                <div key={item.id} >
+                <div key={item.id} style={{color: 'aliceblue'}} >
                     <h1>{ item.id + ". " + item.title}</h1>
                     <p>{item.description}</p>
                 </div>
